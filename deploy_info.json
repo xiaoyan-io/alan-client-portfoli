@@ -1,0 +1,17 @@
+{
+    "Cases":  [
+                  "CASE_01_TOE_TET",
+                  "CASE_02_53x26B",
+                  "CASE_03_NAYPYIDAW",
+                  "CASE_04_NALEN",
+                  "CASE_05_SPATIAL_AI"
+              ],
+    "Generated":  {
+                      "value":  "\/Date(1791087995987)\/",
+                      "DisplayHint":  2,
+                      "DateTime":  "2026年10月4日 10:56:35"
+                  },
+    "Project":  "ALAN SYSTEM Client Portfolio",
+    "Version":  "V1.0",
+    "Platform":  "Static HTML"
+}
