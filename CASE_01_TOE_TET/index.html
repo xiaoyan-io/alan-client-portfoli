@@ -1,44 +1,621 @@
+<!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 
-<title>Toe Tet Myanmar Bakery Raw Material Showroom</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+TOE TET MYANMAR — Client Presentation V2
+</title>
 
 
 <style>
 
-body{
-
-font-family:Arial;
-background:#f5f5f5;
-padding:50px;
-
+@page {
+    size: 13.333in 7.5in;
+    margin: 0;
 }
 
 
-.container{
-
-background:white;
-padding:40px;
-border-radius:20px;
-
+* {
+    box-sizing: border-box;
 }
 
 
-img{
+html,
+body {
 
-width:900px;
-max-width:100%;
-margin:20px 0;
+    margin: 0;
+    padding: 0;
 
+    background: #0b0d0f;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #161616;
+
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }
 
+
+.slide {
+
+    width: 13.333in;
+    height: 7.5in;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #f7f6f2;
+
+    page-break-after: always;
+    break-after: page;
+}
+
+
+.slide:last-child {
+
+    page-break-after: auto;
+    break-after: auto;
+}
+
+
+.slide-number {
+
+    position: absolute;
+
+    right: 0.5in;
+    bottom: 0.28in;
+
+    font-size: 10px;
+
+    letter-spacing: 0.15em;
+
+    color: #86827b;
+}
+
+
+.brand {
+
+    position: absolute;
+
+    top: 0.28in;
+    right: 0.5in;
+
+    font-size: 10px;
+
+    letter-spacing: 0.18em;
+
+    font-weight: 700;
+
+    color: #272727;
+}
+
+
+.eyebrow {
+
+    font-size: 11px;
+
+    letter-spacing: 0.22em;
+
+    text-transform: uppercase;
+
+    font-weight: 700;
+
+    color: #9b6335;
+
+    margin-bottom: 18px;
+}
+
+
+h1 {
+
+    margin: 0;
+
+    font-size: 46px;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.04em;
+}
+
+
+h2 {
+
+    margin: 0;
+
+    font-size: 32px;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.025em;
+}
+
+
+h3 {
+
+    margin: 0;
+
+    font-size: 18px;
+}
+
+
+p {
+
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.62;
+
+    color: #5a5752;
+}
+
+
+.cover {
+
+    display: grid;
+
+    grid-template-columns: 44% 56%;
+}
+
+
+.cover-left {
+
+    padding: 0.75in 0.5in 0.6in 0.72in;
+
+    background: #101214;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.cover-left .eyebrow {
+
+    color: #d9ad77;
+}
+
+
+.cover-left h1 {
+
+    font-size: 54px;
+
+    margin-bottom: 14px;
+}
+
+
+.cover-left h2 {
+
+    font-size: 26px;
+
+    font-weight: 400;
+
+    color: #e4e0d8;
+
+    margin-bottom: 26px;
+}
+
+
+.cover-left p {
+
+    color: #aaa69f;
+
+    max-width: 430px;
+}
+
+
+.metric-row {
+
+    margin-top: 34px;
+
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+
+.metric {
+
+    border: 1px solid #474a4d;
+
+    padding: 9px 12px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    color: #d7d2ca;
+}
+
+
+.cover-right {
+
+    background: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 0.4in;
+}
+
+
+.cover-right img {
+
+    max-width: 100%;
+
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+
+.section-header {
+
+    position: absolute;
+
+    top: 0.46in;
+    left: 0.62in;
+
+    right: 0.62in;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+}
+
+
+.section-title {
+
+    max-width: 7.5in;
+}
+
+
+.section-title h2 {
+
+    margin-top: 5px;
+}
+
+
+.section-title p {
+
+    margin-top: 12px;
+
+    max-width: 7.1in;
+}
+
+
+.two-up {
+
+    position: absolute;
+
+    left: 0.62in;
+    right: 0.62in;
+
+    top: 1.7in;
+    bottom: 0.52in;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 0.25in;
+}
+
+
+.image-panel {
+
+    position: relative;
+
+    background: white;
+
+    border: 1px solid #dedbd5;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.image-panel img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.image-caption {
+
+    position: absolute;
+
+    left: 14px;
+    bottom: 12px;
+
+    background: rgba(16,18,20,.88);
+
+    color: white;
+
+    padding: 6px 9px;
+
+    font-size: 10px;
+
+    letter-spacing: .05em;
+}
+
+
+.plan-layout {
+
+    position: absolute;
+
+    left: 0.62in;
+    right: 0.62in;
+
+    top: 1.55in;
+    bottom: 0.52in;
+
+    display: grid;
+
+    grid-template-columns: 72% 28%;
+
+    gap: 0.22in;
+}
+
+
+.plan-image {
+
+    background: white;
+
+    border: 1px solid #dedbd5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+.plan-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.note-panel {
+
+    background: #17191b;
+
+    color: white;
+
+    padding: 0.35in;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.note-panel h3 {
+
+    margin-bottom: 16px;
+
+    color: #f2eee6;
+}
+
+
+.note-panel ul {
+
+    margin: 0;
+
+    padding-left: 18px;
+
+    color: #b9b4ad;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.note-panel .highlight {
+
+    margin-top: 22px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #3b3e41;
+
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    color: #d7a46b;
+
+    text-transform: uppercase;
+
+    letter-spacing: .08em;
+}
+
+
+.delivery-grid {
+
+    position: absolute;
+
+    left: 0.62in;
+    right: 0.62in;
+
+    top: 1.55in;
+    bottom: 0.6in;
+
+    display: grid;
+
+    grid-template-columns: 43% 57%;
+
+    gap: 0.28in;
+}
+
+
+.delivery-image {
+
+    background: white;
+
+    border: 1px solid #dedbd5;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+.delivery-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+.delivery-copy {
+
+    padding: 0.1in 0.18in;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.delivery-copy h2 {
+
+    font-size: 30px;
+
+    margin-bottom: 18px;
+}
+
+
+.deliverables {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.deliverable {
+
+    border-top: 2px solid #1b1d1f;
+
+    padding-top: 9px;
+
+    font-size: 12px;
+
+    line-height: 1.45;
+
+    color: #393632;
+}
+
+
+.final-line {
+
+    margin-top: 30px;
+
+    padding-top: 16px;
+
+    border-top: 1px solid #cbc7c0;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: #9b6335;
+}
+
+
+@media screen {
+
+    body {
+
+        padding: 30px;
+
+    }
+
+    .slide {
+
+        margin: 0 auto 30px auto;
+
+        box-shadow:
+            0 20px 70px rgba(0,0,0,.35);
+
+        transform-origin: top center;
+    }
+}
+
+
+@media print {
+
+    body {
+
+        background: white;
+
+        padding: 0;
+    }
+
+    .slide {
+
+        margin: 0;
+
+        box-shadow: none;
+    }
+}
 
 </style>
-
 
 </head>
 
@@ -46,37 +623,641 @@ margin:20px 0;
 <body>
 
 
-<div class="container">
+<!-- ====================================================== -->
+<!-- PAGE 1 — COVER -->
+<!-- ====================================================== -->
 
+<section class="slide cover">
+
+<div class="cover-left">
+
+<div class="eyebrow">
+Spatial Design / Construction Documentation
+</div>
 
 <h1>
-Toe Tet Myanmar Bakery Raw Material Showroom
+TOE TET<br>
+MYANMAR
 </h1>
 
-
-<h3>
-AI Spatial Design Case
-</h3>
-
+<h2>
+Bakery Raw Material Showroom Transformation
+</h2>
 
 <p>
-Visual Assets:
-8
+Existing-condition verification, showroom planning,
+customer circulation, demolition coordination,
+MEP coordination and setting-out documentation
+combined into one practical delivery workflow.
 </p>
 
-<img src='assets/01_Toe_Tet_Master_Plan_V1.1_Overlay.png'>
-<img src='assets/02_Toe_Tet_Demolition_Plan_V1.1_Overlay.png'>
-<img src='assets/03_Toe_Tet_MEP_Plumbing_Plan_V1.1.png'>
-<img src='assets/04_Toe_Tet_Setting_Out_Plan_V1.1.png'>
-<img src='assets/05_Toe_Tet_2F_Storage_Concept_V1.1.png'>
-<img src='assets/06__inspect_Boss_Gf.png'>
-<img src='assets/07__inspect_Boss_Ff.png'>
-<img src='assets/08__inspect_TTM_Master_Plan.png'>
+<div class="metric-row">
 
+<div class="metric">
+5.238 m frontage
+</div>
+
+<div class="metric">
+6.0 m depth
+</div>
+
+<div class="metric">
+1.6 m clear aisle
+</div>
 
 </div>
+
+</div>
+
+
+<div class="cover-right">
+
+<img
+src="assets/01_MASTER_PLAN.png"
+alt="Toe Tet Master Plan">
+
+</div>
+
+
+<div class="slide-number"
+style="color:#8c8c8c;">
+01 / 07
+</div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- PAGE 2 — EXISTING CONDITION -->
+<!-- ====================================================== -->
+
+<section class="slide">
+
+<div class="brand">
+TOE TET MYANMAR
+</div>
+
+<div class="section-header">
+
+<div class="section-title">
+
+<div class="eyebrow">
+01 — Existing Condition
+</div>
+
+<h2>
+Verified Existing Building Baseline
+</h2>
+
+<p>
+Ground-floor and first-floor source drawings are retained
+as the evidence baseline before any proposed showroom work.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="two-up">
+
+<div class="image-panel">
+
+<img
+src="assets/06_EXISTING_GF.png"
+alt="Existing Ground Floor">
+
+<div class="image-caption">
+Ground Floor
+</div>
+
+</div>
+
+
+<div class="image-panel">
+
+<img
+src="assets/07_EXISTING_FF.png"
+alt="Existing First Floor">
+
+<div class="image-caption">
+First Floor
+</div>
+
+</div>
+
+</div>
+
+
+<div class="slide-number">
+02 / 07
+</div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- PAGE 3 — MASTER PLAN -->
+<!-- ====================================================== -->
+
+<section class="slide">
+
+<div class="brand">
+TOE TET MYANMAR
+</div>
+
+
+<div class="section-header">
+
+<div class="section-title">
+
+<div class="eyebrow">
+02 — Spatial Planning
+</div>
+
+<h2>
+Showroom Master Plan
+</h2>
+
+<p>
+The proposed plan organizes customer movement,
+display shelves, ingredient platforms,
+checkout / POS and the retained WC around
+a clear central customer route.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-layout">
+
+<div class="plan-image">
+
+<img
+src="assets/01_MASTER_PLAN.png"
+alt="Toe Tet Master Plan">
+
+</div>
+
+
+<div class="note-panel">
+
+<h3>
+Planning Priorities
+</h3>
+
+<ul>
+
+<li>
+Clear customer entry
+</li>
+
+<li>
+1.6 m central aisle
+</li>
+
+<li>
+Product visibility
+</li>
+
+<li>
+Wall shelving zones
+</li>
+
+<li>
+Ingredient display platforms
+</li>
+
+<li>
+Checkout + POS
+</li>
+
+<li>
+Retained WC relationship
+</li>
+
+</ul>
+
+
+<div class="highlight">
+Existing shell retained.
+Proposed interior geometry follows
+the verified V1.1 design baseline.
+</div>
+
+</div>
+
+</div>
+
+
+<div class="slide-number">
+03 / 07
+</div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- PAGE 4 — SETTING OUT -->
+<!-- ====================================================== -->
+
+<section class="slide">
+
+<div class="brand">
+TOE TET MYANMAR
+</div>
+
+
+<div class="section-header">
+
+<div class="section-title">
+
+<div class="eyebrow">
+03 — Setting-Out
+</div>
+
+<h2>
+From Design Intent to Site Positioning
+</h2>
+
+<p>
+Key aisle, entry, shelving and checkout dimensions
+are translated into a site-readable setting-out plan.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-layout">
+
+<div class="plan-image">
+
+<img
+src="assets/02_SETTING_OUT.png"
+alt="Toe Tet Setting Out Plan">
+
+</div>
+
+
+<div class="note-panel">
+
+<h3>
+Setting-Out Controls
+</h3>
+
+<ul>
+
+<li>
+Total width: 5238 mm
+</li>
+
+<li>
+Total depth: 6000 mm
+</li>
+
+<li>
+Entrance: 1600 mm
+</li>
+
+<li>
+Central aisle: 1600 mm
+</li>
+
+<li>
+Shelf depth control
+</li>
+
+<li>
+POS / checkout location
+</li>
+
+</ul>
+
+
+<div class="highlight">
+Site execution is dimension-driven,
+not inferred from presentation imagery.
+</div>
+
+</div>
+
+</div>
+
+
+<div class="slide-number">
+04 / 07
+</div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- PAGE 5 — DEMOLITION -->
+<!-- ====================================================== -->
+
+<section class="slide">
+
+<div class="brand">
+TOE TET MYANMAR
+</div>
+
+
+<div class="section-header">
+
+<div class="section-title">
+
+<div class="eyebrow">
+04 — Demolition Strategy
+</div>
+
+<h2>
+Remove Only What the New Layout Requires
+</h2>
+
+<p>
+The demolition drawing identifies removable partitions,
+retained WC elements, sealed abandoned plumbing points
+and the new storefront opening.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-layout">
+
+<div class="plan-image">
+
+<img
+src="assets/03_DEMOLITION.png"
+alt="Toe Tet Demolition Plan">
+
+</div>
+
+
+<div class="note-panel">
+
+<h3>
+Demolition Scope
+</h3>
+
+<ul>
+
+<li>
+Remove redundant WC partitions
+</li>
+
+<li>
+Retain one WC
+</li>
+
+<li>
+Seal abandoned WC points
+</li>
+
+<li>
+Seal urinal connection
+</li>
+
+<li>
+Create storefront opening
+</li>
+
+<li>
+Protect retained shell
+</li>
+
+</ul>
+
+
+<div class="highlight">
+Demolition is coordinated against
+the new showroom plan before fit-out.
+</div>
+
+</div>
+
+</div>
+
+
+<div class="slide-number">
+05 / 07
+</div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- PAGE 6 — MEP -->
+<!-- ====================================================== -->
+
+<section class="slide">
+
+<div class="brand">
+TOE TET MYANMAR
+</div>
+
+
+<div class="section-header">
+
+<div class="section-title">
+
+<div class="eyebrow">
+05 — MEP Coordination
+</div>
+
+<h2>
+Services Coordinated With the New Layout
+</h2>
+
+<p>
+Plumbing, lighting, POS power and data requirements
+are coordinated against the proposed spatial arrangement.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="plan-layout">
+
+<div class="plan-image">
+
+<img
+src="assets/04_MEP.png"
+alt="Toe Tet MEP Plan">
+
+</div>
+
+
+<div class="note-panel">
+
+<h3>
+Coordinated Services
+</h3>
+
+<ul>
+
+<li>
+Retained WC plumbing
+</li>
+
+<li>
+Basin services
+</li>
+
+<li>
+Abandoned pipe sealing
+</li>
+
+<li>
+Lighting circuits
+</li>
+
+<li>
+Checkout / POS power
+</li>
+
+<li>
+Data connection provision
+</li>
+
+</ul>
+
+
+<div class="highlight">
+MEP information is tied to the
+spatial and setting-out baseline.
+</div>
+
+</div>
+
+</div>
+
+
+<div class="slide-number">
+06 / 07
+</div>
+
+</section>
+
+
+<!-- ====================================================== -->
+<!-- PAGE 7 — DELIVERY SUMMARY -->
+<!-- ====================================================== -->
+
+<section class="slide">
+
+<div class="brand">
+TOE TET MYANMAR
+</div>
+
+
+<div class="section-header">
+
+<div class="section-title">
+
+<div class="eyebrow">
+06 — Delivery Summary
+</div>
+
+<h2>
+From Existing Condition to Contractor-Ready Package
+</h2>
+
+</div>
+
+</div>
+
+
+<div class="delivery-grid">
+
+
+<div class="delivery-image">
+
+<img
+src="assets/05_STORAGE.png"
+alt="Toe Tet 2F Storage Concept">
+
+</div>
+
+
+<div class="delivery-copy">
+
+<p>
+The project package combines spatial design,
+technical coordination and practical procurement /
+contractor preparation into one traceable workflow.
+</p>
+
+
+<div class="deliverables">
+
+<div class="deliverable">
+<strong>Master Plan</strong><br>
+Showroom zoning and circulation
+</div>
+
+<div class="deliverable">
+<strong>Setting-Out</strong><br>
+Site dimensions and fixture positions
+</div>
+
+<div class="deliverable">
+<strong>Demolition Plan</strong><br>
+Remove / retain / seal scope
+</div>
+
+<div class="deliverable">
+<strong>MEP Coordination</strong><br>
+Plumbing, lighting, POS and data
+</div>
+
+<div class="deliverable">
+<strong>2F Storage Concept</strong><br>
+General-material handling layout
+</div>
+
+<div class="deliverable">
+<strong>Site Verification</strong><br>
+Field checks before final execution
+</div>
+
+<div class="deliverable">
+<strong>BOQ Framework</strong><br>
+Quantity and pricing preparation
+</div>
+
+<div class="deliverable">
+<strong>Contractor RFQ</strong><br>
+Structured quotation workflow
+</div>
+
+</div>
+
+
+<div class="final-line">
+Existing → Verify → Plan → Coordinate → Set Out → Price → Build
+</div>
+
+</div>
+
+</div>
+
+
+<div class="slide-number">
+07 / 07
+</div>
+
+</section>
+
 
 </body>
 
 </html>
-
