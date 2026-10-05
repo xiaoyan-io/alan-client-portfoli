@@ -1,0 +1,2 @@
+O:\ALAN_SYSTEM\06_PROJECT_CASES\_WEB_DEPLOY\CASE_01_TOE_TET\3d_source\build_toe_tet_refined_v1_3.py:36: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True

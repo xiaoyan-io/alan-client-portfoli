@@ -1,0 +1,317 @@
+{
+  "schema_version": "1.0",
+  "project_id": "PRJ-2026-TTM-01",
+  "version": "1.3",
+  "status": "WORKING DRAFT / NOT FOR CONSTRUCTION / FIELD VERIFY",
+  "space": {
+    "width": 5.238,
+    "depth": 6,
+    "height": 3.2,
+    "origin": [
+      0,
+      0,
+      0
+    ],
+    "wall_thickness": 0.1
+  },
+  "main_aisle": {
+    "axis": "Y",
+    "center": 2.619,
+    "clear_width": 1.6,
+    "start": 0,
+    "end": 6
+  },
+  "fixtures": [
+    {
+      "id": "S1",
+      "kind": "shelf",
+      "position": [
+        0.15,
+        0.27,
+        0
+      ],
+      "size": [
+        0.45,
+        1.18,
+        2.1
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "S2",
+      "kind": "shelf",
+      "position": [
+        0.15,
+        1.69,
+        0
+      ],
+      "size": [
+        0.45,
+        1.18,
+        2.1
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "S3",
+      "kind": "shelf",
+      "position": [
+        0.15,
+        3.11,
+        0
+      ],
+      "size": [
+        0.45,
+        1.18,
+        2.1
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "S4",
+      "kind": "shelf",
+      "position": [
+        0.15,
+        4.53,
+        0
+      ],
+      "size": [
+        0.45,
+        1.18,
+        2.1
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "S5",
+      "kind": "shelf",
+      "position": [
+        4.638,
+        0.3450000000000002,
+        0
+      ],
+      "size": [
+        0.45,
+        1.55,
+        2.1
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "S6",
+      "kind": "shelf",
+      "position": [
+        4.638,
+        2.245,
+        0
+      ],
+      "size": [
+        0.45,
+        1.55,
+        2.1
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "S7",
+      "kind": "shelf",
+      "position": [
+        4.638,
+        4.145,
+        0
+      ],
+      "size": [
+        0.45,
+        0.805,
+        2.1
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "P1",
+      "kind": "display",
+      "position": [
+        0.899,
+        0.3599999999999999,
+        0
+      ],
+      "size": [
+        0.8,
+        0.92,
+        0.66
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "P2",
+      "kind": "display",
+      "position": [
+        0.899,
+        1.52,
+        0
+      ],
+      "size": [
+        0.8,
+        0.92,
+        0.66
+      ],
+      "rotation_z": 0,
+      "material": "warm_wood"
+    },
+    {
+      "id": "CHECKOUT",
+      "kind": "counter",
+      "position": [
+        4.588,
+        0.411,
+        0
+      ],
+      "size": [
+        0.55,
+        1.838,
+        0.9
+      ],
+      "rotation_z": 0,
+      "material": "microcement"
+    }
+  ],
+  "arrays": [],
+  "style": "microcement_warmwood_darkmetal",
+  "tolerance": 0.002,
+  "coordinate_system": {
+    "units": "m",
+    "config_origin": "front_left_floor",
+    "blender_origin": "room_center_floor",
+    "config_to_blender_translation": [
+      -2.619,
+      -3,
+      0
+    ],
+    "gltf_up_axis": "Y"
+  },
+  "doors": {
+    "main": {
+      "clear_width": 1.6,
+      "clear_height": 2.4,
+      "rough_width": 1.68,
+      "rough_height": 2.44,
+      "center_blender": [
+        0,
+        -3.05,
+        1.2
+      ],
+      "frame": 0.04,
+      "leaf_pose_deg": 90,
+      "swing": "outward",
+      "type": "double_glass"
+    },
+    "staff": {
+      "clear_width": 0.9,
+      "clear_height": 2.1,
+      "rough_width": 0.98,
+      "rough_height": 2.14,
+      "center_blender": [
+        2.669,
+        2.45,
+        1.05
+      ],
+      "clear_y": [
+        2,
+        2.9
+      ],
+      "frame": 0.04,
+      "leaf_pose_deg": 90,
+      "swing": "outward",
+      "type": "single_solid"
+    },
+    "dimensional_status": "working_model_values_field_verification_required"
+  },
+  "adjustment": {
+    "S7": {
+      "old_center": [
+        2.244,
+        1.92,
+        1.05
+      ],
+      "old_size": [
+        0.45,
+        1.55,
+        2.1
+      ],
+      "new_center": [
+        2.244,
+        1.5475,
+        1.05
+      ],
+      "new_size": [
+        0.45,
+        0.805,
+        2.1
+      ],
+      "delta_center": [
+        0,
+        -0.3725,
+        0
+      ],
+      "delta_size": [
+        0,
+        -0.745,
+        0
+      ],
+      "rear_edge": 1.95,
+      "door_clearance": 0.05,
+      "reason": "hold front edge; largest remaining shelf fitting before staff opening with 50mm margin"
+    }
+  },
+  "camera": {
+    "name": "VIEW_A",
+    "location": [
+      0,
+      -7.45,
+      1.6
+    ],
+    "target": [
+      0,
+      3.05,
+      1.6
+    ],
+    "lens_mm": 35,
+    "sensor_width_mm": 36,
+    "provenance": "保持原 HERO 的 X/Y；按用户最新 VIEW A 锁定要求使用 1.6m 平视、35mm。旧锁定脚本另有 2.20m/42mm，未采用。"
+  },
+  "render": {
+    "engine": "BLENDER_EEVEE",
+    "resolution": [
+      1600,
+      1000
+    ],
+    "format": "JPEG",
+    "quality": 95,
+    "clay": true,
+    "plan_review": true
+  },
+  "pipeline": {
+    "minimum_blender": "5.2",
+    "builder": "3d_source/build_toe_tet_refined_v1_3.py",
+    "validator": "alan-spatial-pipeline/blender_executor.py --validate-only",
+    "export": "exports/TOE_TET_REFINED_V1_3.glb",
+    "verification": "reimport_glb_ray_cast_mesh_comparison",
+    "preserve_versions": [
+      "V1",
+      "V1.1",
+      "V1.2"
+    ],
+    "meP_scope": "本配置为建模执行管道，不包含给排水或机电改动。"
+  },
+  "known_baseline": {
+    "checkout_S5_overlap": "继承的收银台与S5体量重叠；本轮仅处理入口拓扑及S7开口冲突，不宣称全家具碰撞消除。"
+  }
+}
